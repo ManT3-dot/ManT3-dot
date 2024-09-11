@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styl.css">
+        <title>About Us</title>
+    </head>
+    <body>
+        <div class="pg">
+            <nav>
+            <link rel="stylesheet" href="styl.css">
+             <ul>
+              <li><a href="Animate.html">Home</a></li>
+             </ul>
+            </nav>
+        <h1>About Tpage</h1>
+        <div class="About">
+            <h2>Our Mission</h2>
+            <p>Tpage is dedicated to providing reliable and affordable hosting solutions tailored to your needs.
+                Our mission is to support indivisuals and businesses in establishing and growing their online 
+                presence with ease and confidence.
+            </p>
+
+        </div>
+        <div class="we">
+            <h3>Our Work Experience</h3>
+            <ul>
+                <li><strong>2024 </strong> Currently among top leading provider of hosting 
+                solutions, offering innivative options for bussinesses of all sizes.</li>
+                    <br>
+                <li><strong>2022 </strong> Expanded service offerings to include cloud hosting
+                and advanced security features.</li>
+                    <br>
+                <li><strong>2020 </strong> Established a reputation for exceptional customer 
+                support reliable service.</li>
+            </ul>
+        </div>
+        <div class="timeline">
+            <h3>Timeline</h3>
+            <div class="timeline-item" id="item1">
+                <h5>2014</h5>
+                <div class="timeline-content">Launched the company with the focus on providing 
+                    affordable reliable hosting  solutions.</div>
+            </div>
+            <div class="timeline-item" id="item2">
+                <h5>2019</h5>
+                <div class="timeline-content">Introduced premium hosting plans with enhanced features and support.</div>
+            </div>
+            <div class="timeline-item" id="item3">
+                <h5>2022</h5>
+                <div class="timeline-content"> Expanded service offerings to include cloud hosting and advanced security features.</div>
+            </div>
+            <div class="timeline-item" id="item4">
+                <h5>2023</h5>
+                <div class="timeline-content">Reached over 1 million users worldwide, solidifying our place in the market</div>
+            </div>
+        </div>
+        </div>
+
+        <script>
+            document.querySelectorAll('.timeline-item').forEach(item =>{
+                item.addEventListener('click',() => {
+                    //remove active class from all items
+                    document.querySelectorAll('.timeline-item').forEach(
+                        ti => ti.classList.add('active'));
+                });
+            });
+        </script>
+    </body>
+</html>

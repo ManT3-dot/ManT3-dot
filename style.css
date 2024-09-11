@@ -1,0 +1,113 @@
+style.css
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.hero{
+    width: fit;
+    min-height: 100vh;
+    background-image: linear-gradient(45deg,#2828d9,#c4c4c4);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0  10px #5d5d5d;
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 140px;
+    border-radius: 50%;
+    border: 7px rgb(37, 3, 32);
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    text-decoration: underline;
+    color: white;
+    font-weight: 400;
+}
+
+.btn{
+    display:  inline-block;
+    padding: 14px 40px;
+    color: #000;
+    background-image: linear-gradient(45deg,#2234a7,#c4c4c4);
+    font-size: 14px;
+    border-radius: 33px;
+    border-top-right-radius: 0;
+    transition: 0.5s; 
+}
+.login-btn{
+    display: inline-block;
+    padding: 14px 40px;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(37deg,#346,rgb(37, 3, 32));
+    
+    font-weight: 300;
+    border-radius: 33px;
+    border-top-right-radius: 0;
+    transition: 0.5;
+    
+
+}
+.login-btn:hover{
+    border-top-right-radius: 30px;
+}
+.content{
+    margin-top: 7%;
+    max-width: 700px;
+}
+.content h1{
+    font-size: 70px;
+    color: #000;
+}
+.content p{
+    margin: 10px 0 30px;
+    color: rgb(5, 4, 4);
+    animation-delay: 0.5s;
+}
+.content .btn{
+    padding: 15px 80px;
+    font-size: 18px;
+    animation-delay: 1s;
+}
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+.Feature-img{
+    width: 500px;
+    height: 700px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 1em;
+
+}
+.Feature-img.anim{
+    animation-delay: 1.5s;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
